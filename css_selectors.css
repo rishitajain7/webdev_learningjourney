@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(248, 92, 92);
+}
+
+.head{
+    color:darkblue
+}
+
+#bglime{
+    background-color: rgb(244, 244, 132);
+}
+
+h2 span{
+    color:red
+}
+
+p{
+    color:white
+}
+#para{
+    color:green
+}
+#para span{
+    font-size: 20px;
+    color:black
+}
+
+ul li:nth-child(1) span{
+    background-color: yellow;
+}
+
+ul li:nth-child(2) span {
+    background-color:blue;
+}
+
+ol li:nth-child(2){
+    color:blue
+}
+ol li:nth-child(3){
+    color:red
+}
+

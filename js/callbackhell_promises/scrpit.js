@@ -1,57 +1,37 @@
-const divideNumbers = (num1, num2) => {
+// Arrow function that returns a Promise
+const divide=(a,b) => {
 
-    return new Promise(function(resolve, reject) {
-
-        if (num2 === 0) {
-            reject("Error: Division by zero is not allowed.");
-        } else {
-            resolve(num1 / num2);
+    return new Promise((resolve, reject) => {
+    if (b == 0) {
+        reject("Cannot divide by zero.");
         }
+        else {
+        resolve(a / b);
+        }
+    });};
 
-    });
+let testCases = [
+    [20, 5],
+    [18, 3],
+    [15, 0],
+    [100, 4],
+    [81, 9]
+];
 
-};
+for (let i = 0; i < testCases.length; i++) {
+    divide(testCases[i][0], testCases[i][1])
+    .then(function(result) {
+        console.log(
+            testCases[i][0] + "/" +
+            testCases[i][1] + "=" +
+            result
+        );
+        })
 
-divideNumbers(20, 5)
-.then(function(result) {
-    console.log("20 / 5 =", result);
-})
-.catch(function(error) {
-    console.log(error);
-});
-
-// Test Case 2
-divideNumbers(15, 3)
-.then(function(result) {
-    console.log("15 / 3 =", result);
-})
-.catch(function(error) {
-    console.log(error);
-});
-
-// Test Case 3
-divideNumbers(10, 0)
-.then(function(result) {
-    console.log("10 / 0 =", result);
-})
-.catch(function(error) {
-    console.log(error);
-});
-
-// Test Case 4
-divideNumbers(50, 10)
-.then(function(result) {
-    console.log("50 / 10 =", result);
-})
-.catch(function(error) {
-    console.log(error);
-});
-
-// Test Case 5
-divideNumbers(81, 9)
-.then(function(result) {
-    console.log("81 / 9 =", result);
-})
-.catch(function(error) {
-    console.log(error);
-});
+    .catch(function(error){
+        console.log(
+            testCases[i][0] + "/ " +
+            testCases[i][1] + " :" +
+            error
+        );
+    });}

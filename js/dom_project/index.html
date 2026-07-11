@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">Logo</h2>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+    <div class="user">
+        <span class="username">Username</span>
+        <button class="logout">➜</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="left">
+        <div class="card">
+            <h2>Added Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Service Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <tr id="emptyRow">
+                        <td colspan="3">
+                            <div class="empty">
+                                <h1>ⓘ</h1>
+                                <h3>No Items Added</h3>
+                                <p>Add items to the cart from the services bar</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total Amount</th>
+                        <th></th>
+                        <th id="totalPrice">₹0</th>
+                    </tr>
+                </tfoot>
+           </table>
+
+        </div>
+        <div class="card">
+
+            <h2>Book Now</h2>
+            <form id="bookingForm">
+
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+
+                <label>Email ID</label>
+                <input type="email" placeholder="john@gmail.com" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="********" required>
+
+                <button id="bookBtn" type="submit">Book Now</button>
+
+            </form>
+            </div>
+    </div>
+
+    <div class="right card">
+        <h2>Browse Our Services</h2>
+        <p> Click on the add to cart button to add the services to your cart or press skip.</p>
+        <hr>
+        <img id="serviceImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzzvNLN3tFodYDSvoSoTq6O8SN2rIqPKvDWhAfucqAA&s=10" alt="Service">
+        <div class="service-info">
+            <h2 id="serviceName">Dry Cleaning</h2>
+            <h2 id="servicePrice">₹200.00</h2>
+        </div>
+        <div class="buttons">
+            <button id="skipBtn">Skip Item ⊝</button>
+            <button id="addBtn">Add Item ⊕</button>
+        </div>
+        <p class="bottom-text">
+            🔵 Add the items to the cart and book now
+        </p>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

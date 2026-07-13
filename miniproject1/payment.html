@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="header">
+        <h2>Thala<span>7.</span></h2>
+        <div id="navlinks">
+            <a href="index.html">Home ▽</a>
+            <a href="">About ▽</a>
+            <a href="">Brands ▽</a>
+            <a href="">More ▽</a>
+            <a href="">Contact ▽</a>
+        </div>
+        <input type="text" id="search" placeholder="Search">        
+    </div>
+    <div id="container">
+    <div id="left">
+        <h3>Checkout</h3>
+        <h2>Contact Details</h2>
+        <label>Email</label>
+        <input type="email">
+        <h2>Payment</h2>
+        <div id="methods">
+            <button>Card</button>
+            <button>UPI</button>
+            <button>Bank</button>
+            <button>COD</button>
+        </div>
+        <label>Card Number</label>
+        <input type="text">
+        <div class="row">
+            <div>
+                <label>Expiry</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>CVV</label>
+                <input type="password">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label>Country</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>ZIP</label>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <h2>Order Summary</h2>
+        <div id="coupon">
+            <input type="text" placeholder="Coupon Code">
+            <button>Apply</button>
+        </div>
+        <div id="summary">
+            <div class="price"><span>Sub Total</span> <span>₹4,700</span>
+            </div>
+            <div class="price"> <span>Taxes</span> <span>₹179</span>
+            </div>
+            <div class="price">
+                <span>Discount</span>
+                <span>₹0</span>
+            </div>
+            <hr>
+            <div class="price total">
+                <span>Total</span>
+                <span>₹4899</span>
+            </div>
+        </div>
+        <button id="payBtn">
+            Pay Now ₹4899
+        </button>
+    </div>
+</div>
+</body>
+</html>

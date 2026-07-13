@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+   <div class="nav">
+        <div class="logo">    Logo</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="quality.html">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="user">      Username  </div>
+
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h1>Our Laundry Services</h1>
+            <p>  Click the button to add a service to your cart. </p>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Dry Cleaning</td>
+                    <td>₹200</td>
+                    <td><button class="addBtn">Add Item</button></td>
+                </tr>
+                <tr>
+                    <td>Wash and Fold</td>
+                    <td>₹100</td>
+                    <td><button class="addBtn">Add Item</button></td>
+                </tr>
+                <tr>
+                    <td>Ironing</td>
+                    <td>₹30</td>
+                    <td><button class="addBtn">Add Item</button></td>
+                </tr>
+                <tr>
+                    <td>Stain Removal</td>
+                    <td>₹150</td>
+                    <td><button class="addBtn">Add Item</button></td>
+                </tr>
+                <tr>
+                    <td>Leather and Suede Cleaning</td>
+                    <td>₹500</td>
+                    <td><button class="addBtn">Add Item</button></td>
+                </tr>
+                <tr>
+                    <td>Wedding Dress Cleaning</td>
+                    <td>₹1200</td>
+                    <td><button class="addBtn">Add Item</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <h2>Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Service</th>
+                        <th>Price</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                </tbody>
+            </table>
+            <div id="emptyBox">
+                <h3>No Items Added</h3>
+                <p>  Add services from the list. </p>
+            </div>
+            <h2 id="totalPrice">  Total : ₹0 </h2>
+        </div>
+    </div>
+    <div class="booking" id="bookingSection">
+        <h2>Book Your Service</h2>
+        <form id="bookingForm">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email"id="email" placeholder="Enter your email">
+
+            <label>Phone Number</label>
+            <input type="text"id="phone"placeholder="Enter your phone number">
+            <button type="submit"> Book Now</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

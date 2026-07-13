@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    box-shadow:0px 2px 8px lightgray;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:rgb(22, 107, 226);
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+    margin:0px 15px;
+    font-size:18px;
+}
+
+.menu a:hover{
+    color:rgb(22, 107, 226);
+}
+
+.user{
+    font-size:18px;
+    color:rgb(22, 107, 226);
+
+}
+
+.container{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+}
+
+.left{
+    width:60%;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px gray;
+}
+
+.right{
+    width:40%;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px gray;
+}
+
+.left h1{
+    margin-bottom:10px;
+}
+
+.left p{
+    margin-bottom:25px;
+    color:gray;
+}
+
+table{
+    width:100%;
+}
+
+th{
+    background:rgb(208, 227, 253);
+    color:rgb(22, 107, 226);
+}
+
+th,td{
+    border:1px solid gray;
+    padding:12px;
+    text-align:center;
+}
+
+.addBtn{
+    background:rgb(148, 189, 247);
+    color:rgb(22, 107, 226);
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.addBtn:hover{
+ background:rgb(22, 107, 226);
+ color: white;
+}
+
+.removeBtn{
+    background:rgb(241, 119, 119);
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.removeBtn:hover{
+    background:red;
+}
+
+#emptyBox{
+    text-align:center;
+    margin-top:30px;
+    color:gray;
+}
+
+#totalPrice{
+    margin-top:25px;
+    color:rgb(22, 107, 226);
+}
+
+.booking{
+    width:70%;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px gray;
+}
+
+.booking label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.booking input{
+    width:100%;
+    padding:12px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+.booking button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:rgb(162, 200, 253);
+    color:darkblue;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:17px;
+
+}
+
+.booking button:hover{
+
+    background:rgb(22, 107, 226);
+    color: white;
+
+}
+
+#message{
+    margin-top:20px;
+    font-weight:bold;
+    text-align:center;
+}

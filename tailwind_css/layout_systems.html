@@ -17,13 +17,20 @@
                 <a href="#" class="hover:text-blue-700">Contact Us</a>
             </div>
             <button class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700/80">Get Started</button>
-            <button class="md:hidden text-3xl"><ion-icon name="menu-outline"></ion-icon></button>
+            <button id="menuBtn" class="md:hidden text-3xl"><ion-icon name="menu-outline"></ion-icon></button>
+                <div id="mobileMenu" class="hidden flex-col gap-4 font-medium mt-4 md:hidden">
+                    <a href="#" class="hover:text-blue-700">Features</a>
+                    <a href="#" class="hover:text-blue-700">Pricing</a>
+                    <a href="#" class="hover:text-blue-700">About</a>
+                    <a href="#" class="hover:text-blue-700">Contact Us</a>
+                </div>
+
         </div>
     </nav>
     <section class="bg-gradient-to-r from-blue-800 to-purple-700 text-white">
         <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
             <div class="lg:w-1/2 text-center lg:text-left">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Build amazing products faster</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Build Amazing Products Faster</h2>
                 <p class="text-lg text-gray-200 mb-8">The all-in-one platform for teams to collaborate, build and launch products efficiently.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <button class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Start free trial</button>
@@ -65,9 +72,19 @@
     <footer class="bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <h2 class="text-2xl font-bold">AppName</h2>
-            <p class="text-gray-400">AppName. All rights reserved.</p>
+            <p class="text-gray-400">2026 AppName. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
 <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 

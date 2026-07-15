@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600"><ion-icon name="rocket-outline"></ion-icon> AppName</h1>
+            <div class="hidden md:flex gap-8 font-medium">
+                <a href="#" class="hover:text-blue-700">Features</a>
+                <a href="#" class="hover:text-blue-700">Pricing</a>
+                <a href="#" class="hover:text-blue-700">About</a>
+                <a href="#" class="hover:text-blue-700">Contact Us</a>
+            </div>
+            <button class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700/80">Get Started</button>
+            <button class="md:hidden text-3xl"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+    </nav>
+    <section class="bg-gradient-to-r from-blue-800 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Build amazing products faster</h2>
+                <p class="text-lg text-gray-200 mb-8">The all-in-one platform for teams to collaborate, build and launch products efficiently.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <button class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Start free trial</button>
+                    <button class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700">Watch demo</button>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <img
+                src="https://img.magnific.com/free-photo/group-multinational-busy-people-working-office_146671-15665.jpg?semt=ais_hybrid&w=740&q=80" class="rounded-lg shadow-2xl w-full h-64 md:h-80 lg:h-96 object-cover"alt="Team">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto ">
+            <h2 class="text-4xl font-bold text-center mb-12">Powerful Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-5xl mb-4"><ion-icon name="flash-outline"></ion-icon></div>
+                    <h3 class="text-2xl font-semibold mb-3">Lightning Fast</h3>
+                    <p class="text-gray-600">Optimized performance to ensure blazing-fast loading and smooth user experience.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-5xl mb-4"><ion-icon name="lock-closed-outline"></ion-icon></div>
+                    <h3 class="text-2xl font-semibold mb-3">Secure</h3>
+                    <p class="text-gray-600"> Enterprise-grade security &mdash; keeps your data safe with modern protection standards.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-5xl mb-4"><ion-icon name="bar-chart-outline"></ion-icon></div>
+                    <h3 class="text-2xl font-semibold mb-3">Analytics</h3>
+                    <p class="text-gray-600"> Get real-time insights with detailed reports and smart dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <h2 class="text-2xl font-bold">AppName</h2>
+            <p class="text-gray-400">AppName. All rights reserved.</p>
+        </div>
+    </footer>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

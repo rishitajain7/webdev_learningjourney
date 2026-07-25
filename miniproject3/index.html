@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowApp</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-900 text-white overflow-x-hidden">
+
+<div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute top-0 left-0 w-80 h-80 bg-indigo-500/30 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-purple-500/30 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-pink-500/20 blur-3xl animate-morph -translate-x-1/2 -translate-y-1/2"></div>
+</div>
+
+<header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md text-white border-b border-slate-800">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+        <a href="#" class="text-2xl font-bold bg-purple-500 bg-clip-text text-transparent">FlowApp</a>
+        <ul class="hidden md:flex items-center gap-8">
+            <li><a href="#" class="hover:text-indigo-400">Home</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Features</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Pricing</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Contact</a></li>
+        </ul>
+        <div class="hidden md:flex gap-4">
+            <button class="px-5 py-2 border border-slate-600 rounded-lg hover:bg-slate-800">Login</button>
+            <button class="px-5 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg hover:scale-105 transition duration-300 animate-glow">Get Started</button>
+        </div>
+    </nav>
+</header>
+
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#ffffff22_1px,transparent_1px),linear-gradient(to_bottom,#ffffff22_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+        <div>
+            <p class="inline-block px-5 py-2 rounded-full bg-white/10 border border-white/10 text-indigo-300 text-sm mb-6">Welcome to FlowApp</p>
+            <h1 class="text-5xl lg:text-7xl font-black leading-tight bg-gradient-to-r from-white via-indigo-300 to-purple-400 bg-clip-text text-transparent animate-slide-up">Build Better Products With Your Team</h1>
+            <p class="text-gray-300 text-lg leading-8 mt-8 max-w-xl animate-slide-right">FlowApp helps teams manage projects, collaborate in real time,and keep everything organized from one place.</p>
+            <div class="flex flex-wrap gap-5 mt-10">
+                <button class="animate-scale-in bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-3 rounded-lg hover:bg-indigo-700 hover:scale-105 transition duration-300">Get Started</button>
+                <button class="animate-scale-in border border-white/20 px-6 py-3 rounded-lg hover:bg-slate-800 transition">Learn More</button>
+            </div>
+        </div>
+        <div class="relative flex justify-center">
+        <div class="absolute w-[420px] h-[420px] rounded-full border border-indigo-500/20 animate-ring"></div>
+        <div class="absolute w-[520px] h-[520px] rounded-full border border-purple-500/10 animate-ring"></div>
+        <div class="relative bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl animate-float">
+            <h2 class="text-xl font-semibold mb-6">Dashboard Overview</h2>
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>Sales</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="bg-slate-700 h-3 rounded-full">
+                        <div class="bg-indigo-500 h-3 rounded-full w-4/5"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>Growth</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="bg-slate-700 h-3 rounded-full">
+                        <div class="bg-green-500 h-3 rounded-full w-2/3"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>Customers</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bg-slate-700 h-3 rounded-full">
+                        <div class="bg-pink-500 h-3 rounded-full w-[90%]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 mt-8">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <h3 class="text-2xl font-bold">10K+</h3>
+                    <p class="text-sm text-slate-300">Users</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <h3 class="text-2xl font-bold">95%</h3>
+                    <p class="text-sm text-slate-300">Success</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <h3 class="text-2xl font-bold">24/7</h3>
+                    <p class="text-sm text-slate-300">Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="features" class="bg-slate-950 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold">Our Features</h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Everything you need to manage projects, collaborate with your team, and improve productivity.</p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8 mt-20">
+            <div class="bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-8 backdrop-blur-xl bg-white/10 border border-white/10 hover:scale-[1.03] transition duration-300 hover:-translate-y-3 transition duration-300">
+                <div class="text-5xl">📊</div>
+                <h3 class="text-2xl font-semibold mt-6">AI Powered Automation</h3>
+                <p class="text-slate-300 mt-4 leading-7">Track your team's performance using real-time reports and easy-to-read dashboards.</p>
+                <button class="mt-6 text-indigo-400 hover:text-indigo-300">Learn More →</button>
+            </div>
+            <div class="bg-slate-800bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-8 backdrop-blur-xl bg-white/10 border border-white/10 hover:scale-[1.03] transition duration-300 hover:-translate-y-3 transition duration-300">
+                <div class="text-5xl">🤝</div>
+                <h3 class="text-2xl font-semibold mt-6">Collaboration</h3>
+                <p class="text-slate-300 mt-4 leading-7">Work together in real time, assign tasks, and share updates with your team.</p>
+                <button class="mt-6 text-indigo-400 hover:text-indigo-300">Learn More →</button>
+            </div>
+            <div class="bg-slate-800bg-white/10 backdrop-blur-xl border border-white/10  rounded-2xl p-8 backdrop-blur-xl bg-white/10 border border-white/10 hover:scale-[1.03] transition duration-300 hover:-translate-y-2 transition duration-300">
+                <div class="text-5xl">🔒</div>
+                <h3 class="text-2xl font-semibold mt-6">Security</h3>
+                <p class="text-slate-300 mt-4 leading-7">Your data stays safe with secure authentication and regular backups.</p>
+                <button class="mt-6 text-indigo-400 hover:text-indigo-300">Learn More →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-slate-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold">Trusted by Teams Worldwide</h2>
+            <p class="text-slate-400 mt-4">Thousands of people use FlowApp every day to stay organized and productive.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+            <div class="bg-white/10 backdrop-blur-xl border border-white/10 mt-8 rounded-2xl p-8 text-center">
+                <h3 class="text-4xl font-bold text-indigo-400">10K+</h3>
+                <p class="text-slate-300 mt-3">Active Users</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-xl border border-white/10 mt-8 rounded-2xl p-8 text-center">
+                <h3 class="text-4xl font-bold text-green-400">500+</h3>
+                <p class="text-slate-300 mt-3">Companies</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-xl border border-white/10 mt-8 rounded-2xl p-8 text-center">
+                <h3 class="text-4xl font-bold text-pink-400">98%</h3>
+                <p class="text-slate-300 mt-3">Customer Satisfaction</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-xl border border-white/10 mt-8 rounded-2xl p-8 text-center">
+                <h3 class="text-4xl font-bold text-yellow-400">24/7</h3>
+                <p class="text-slate-300 mt-3">Customer Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="bg-slate-950 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold">What Our Customers Say</h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Businesses of all sizes trust FlowApp to manage their work more efficiently.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+            <div class="lg:col-span-2 bg-slate-800 rounded-2xl p-8 backdrop-blur-xl bg-white/10 border border-white/10 hover:scale-105 transition duration-300 hover:-translate-y-2 transition duration-300">
+                <div class="flex items-center gap-4">
+                    <img src="https://i.pravatar.cc/100?img=12" alt="User" class="w-14 h-14 rounded-full">
+                    <div>
+                        <h3 class="font-semibold text-lg">Hina Khan</h3>
+                        <p class="text-slate-400 text-sm">Product Designer</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mt-6 leading-7">FlowApp has made project management much easier. Everything is organized and our team collaborates much faster.</p>
+                <div class="text-yellow-400 text-xl mt-6">★★★★★</div>
+            </div>
+            <div class="bg-slate-800 mt-8 rounded-2xl p-8 backdrop-blur-xl bg-white/10 border border-white/10 hover:scale-105 transition duration-300 hover:-translate-y-2 transition duration-300">
+                <div class="flex items-center gap-4">
+                    <img src="https://i.pravatar.cc/100?img=32" alt="User" class="w-14 h-14 rounded-full">
+                    <div>
+                        <h3 class="font-semibold text-lg">Harshit Kapoor</h3>
+                        <p class="text-slate-400 text-sm">Startup Founder</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mt-6 leading-7">The interface is clean, responsive, and very easy to use. It has improved our team's workflow significantly.</p>
+                <div class="text-yellow-400 text-xl mt-6">★★★★★</div>
+            </div>
+            <div class="bg-slate-800 mt-8 rounded-2xl p-8 backdrop-blur-xl bg-white/10 border border-white/10 hover:scale-105 transition duration-300 hover:-translate-y-3 transition duration-300">
+                <div class="flex items-center gap-4">
+                    <img src="https://i.pravatar.cc/100?img=48" alt="User" class="w-14 h-14 rounded-full">
+                    <div>
+                        <h3 class="font-semibold text-lg">Annanya Sharma</h3>
+                        <p class="text-slate-400 text-sm">Marketing Manager</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mt-6 leading-7">We can now track projects, assign tasks, and communicate in one place. It has saved us a lot of time.</p>
+                <div class="text-yellow-400 text-xl mt-6">★★★★★</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-slate-900 py-20 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="relative overflow-hidden bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-10 md:p-16 text-center">
+            <div class="absolute -top-20 -left-20 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-pink-400/20 rounded-full blur-3xl animate-float"></div>
+            <h2 class="text-4xl md:text-5xl font-bold">Ready to Get Started?</h2>
+            <p class="text-indigo-100 mt-6 max-w-2xl mx-auto leading-8">Join thousands of teams using FlowApp to manage projects,collaborate better, and improve productivity every day.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+                <button class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-medium hover:bg-slate-100 transition">Start Free Trial</button>
+                <button class="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-indigo-600 transition">Contact Sales</button>
+            </div>
+            <p class="text-indigo-100 mt-6">No credit card required • Cancel anytime</p>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-950 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div>
+                <h2 class="text-2xl font-bold text-indigo-500">FlowApp</h2>
+                <p class="text-slate-400 mt-4 leading-7">FlowApp helps teams collaborate, manage projects, and stay productive with a simple and modern workspace.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Company</h3>
+                <ul class="space-y-3 text-slate-400">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                    <li><a href="#" class="hover:text-white">Blog</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                <ul class="space-y-3 text-slate-400">
+                    <li><a href="#" class="hover:text-white">Documentation</a></li>
+                    <li><a href="#" class="hover:text-white">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Stay Updated</h3>
+                <p class="text-slate-400 mb-4">Subscribe to receive product updates and news.</p>
+                <form class="space-y-3">
+                    <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 focus:outline-none focus:border-indigo-500">
+                    <button class="w-full bg-indigo-600 py-3 rounded-lg hover:bg-indigo-700 transition">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <hr class="border-slate-800 my-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-sm">© 2026 FlowApp. All rights reserved.</p>
+            <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex justify-center items-center hover:bg-indigo-500">F</a>
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex justify-center items-center hover:bg-sky-500">X</a>
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex justify-center items-center hover:bg-blue-600">in</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button id="topBtn" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-indigo-600 hover:bg-indigo-700 transition hidden">↑</button>
+
+</body>
+
+</html>

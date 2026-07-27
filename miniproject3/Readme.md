@@ -88,7 +88,7 @@ If I continue working on this project, I would like to:
 1. Clone the repository.
 
 ```
-git clone <repository-link>
+git clone https://github.com/rishitajain7/webdev_learningjourney/tree/main/miniproject3
 ```
 
 2. Install dependencies.

@@ -1,113 +1,108 @@
-# FlowApp Landing Page
+# Greenwood Public Library 📚
 
-A responsive landing page built using **HTML** and **Tailwind CSS v4** as part of my Web Development coursework.
+A modern and responsive **public library landing page** built with **HTML5 and Tailwind CSS**. The project focuses on clean editorial design, responsive layouts, interactive cards, smooth transitions, and image hover effects.
 
-The goal of this project was to understand how to create a modern landing page using Tailwind utilities while experimenting with animations, glassmorphism, gradients, and responsive layouts.
+## ✨ Features
+
+* Responsive sticky navigation
+* Backdrop blur navbar
+* Hero section with editorial typography
+* CTA buttons
+* Responsive statistics section
+* Interactive library section cards
+* 2×2 responsive image gallery
+* Image zoom hover effects
+* Bento-style values section
+* Editorial-style About section
+* Responsive membership cards
+* Popular membership badge
+* Testimonial section
+* Grayscale-to-color avatar hover effect
+* Contact and opening-hours section
+* Upcoming events grid
+* Responsive multi-column footer
+* Social media buttons
+* Smooth hover and transition effects
+* Mobile, tablet, and desktop responsive design
+
+## 🛠️ Tech Stack
+
+* HTML5
+* Tailwind CSS
+* CSS Grid
+* Flexbox
+* Responsive Web Design
+
+## 📂 Project Structure
+
+```text
+greenwood-library/
+│
+├── index.html
+└── README.md
+```
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git https://github.com/rishitajain7/webdev_learningjourney
+```
+
+Open the project folder and run:
+
+```text
+index.html
+```
+
+You can also simply open `index.html` directly in your browser.
+
+> Tailwind CSS is loaded through the CDN, so no installation or build setup is required.
+
+## 🎨 Tailwind Concepts Used
+
+This project was also created to practice Tailwind CSS fundamentals such as:
+
+```text
+flex
+grid
+max-w-7xl
+mx-auto
+px-5
+py-20
+gap-5
+md:grid-cols-2
+lg:grid-cols-4
+hover:
+group
+group-hover:
+transition-all
+transition-colors
+transition-transform
+overflow-hidden
+scale-105
+backdrop-blur-md
+```
+
+## 📱 Responsive Design
+
+The layout adapts to different screen sizes:
+
+* **Mobile:** Single-column layouts
+* **Tablet:** Two-column layouts
+* **Desktop:** Multi-column grids and expanded layouts
+
+## 🎯 Project Objective
+
+The goal of this project was to build a visually clean and interactive library landing page while practicing modern **HTML and Tailwind CSS UI/UX techniques** without using external CSS frameworks or JavaScript.
 
 ---
 
-## Features
+### 📚 Sections
 
-- Responsive navigation bar
-- Glassmorphism navbar and cards
-- Hero section with animated background
-- Floating gradient orbs
-- Morphing blob animation
-- Rotating ring animation
-- Dashboard preview card
-- Bento-style features section
-- Testimonial cards
-- Animated Call-to-Action section
-- Responsive footer
-- Custom animations using Tailwind CSS v4
+**Navigation → Hero → Library Sections → Gallery → Values → About → Membership → Testimonial → Contact → Events → Footer**
 
 ---
 
-## Technologies Used
-
-- HTML5
-- Tailwind CSS v4
-- CSS Animations
-
----
-
-## Folder Structure
-
-```
-FlowApp/
-│── index.html
-│── input.css
-│── output.css
-│── package.json
-│── README.md
-```
-
----
-
-## What I Learned
-
-While building this project I learned:
-
-- How Tailwind CSS v4 works without a configuration file.
-- Creating custom colors and animations using `@theme`.
-- Using utility classes instead of writing large CSS files.
-- Making layouts responsive with Flexbox and Grid.
-- Building glassmorphism effects using backdrop blur and transparency.
-- Creating simple CSS keyframe animations like floating, rotating and morphing effects.
-
----
-
-## Challenges Faced
-
-Some parts took multiple attempts before working correctly.
-
-- Understanding how custom animations work in Tailwind v4.
-- Making the hero section responsive.
-- Positioning floating elements without breaking the layout.
-- Getting the glassmorphism effect to look clean on different screen sizes.
-- Managing spacing and alignment across different sections.
-
-These challenges helped me understand Tailwind utilities better and improve my debugging skills.
-
----
-
-## Future Improvements
-
-If I continue working on this project, I would like to:
-
-- Add a working mobile navigation menu.
-- Improve accessibility.
-- Add dark/light theme switching.
-- Connect the buttons to actual pages.
-- Add JavaScript interactions and scroll animations.
-
----
-
-## How to Run
-
-1. Clone the repository.
-
-```
-git clone https://github.com/rishitajain7/webdev_learningjourney/tree/main/miniproject3
-```
-
-2. Install dependencies.
-
-```
-npm install
-```
-
-3. Start Tailwind CSS watcher.
-
-```
-npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
-```
-
-4. Open `index.html` in your browser.
-
----
-
-## Author
-
-**Rishita Jain**
-
+**Built with HTML & Tailwind CSS.**

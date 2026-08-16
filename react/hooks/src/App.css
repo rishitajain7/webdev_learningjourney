@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f7f7f7;
+  color: #0a3282;
 }
 
 .app {
@@ -14,7 +15,7 @@ body {
 
 nav {
   height: 65px;
-  background: white;
+  background: rgb(237, 244, 251);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,10 +59,10 @@ nav span {
 }
 
 .shoe-card {
-  background: white;
+  background: rgb(208, 228, 247);
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(16, 40, 163, 0.1);
 }
 
 .shoe-card img {
@@ -84,8 +85,8 @@ button {
   padding: 9px 14px;
   border-radius: 5px;
   cursor: pointer;
-  background: #222;
-  color: white;
+  background: #0a3282;
+  color: rgb(250, 252, 250);
 }
 
 button:hover {
@@ -94,7 +95,7 @@ button:hover {
 
 .cart-section {
   width: 350px;
-  background: white;
+  background: rgb(121, 183, 238);
   padding: 25px;
   border-radius: 10px;
   min-height: 300px;
@@ -106,7 +107,7 @@ button:hover {
 }
 
 .empty-cart {
-  color: #777;
+  color: #071373;
 }
 
 .cart-item {
@@ -115,7 +116,7 @@ button:hover {
   align-items: center;
   gap: 15px;
   padding: 15px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #132bb6;
 }
 
 .cart-item h4 {
@@ -127,13 +128,13 @@ button:hover {
 }
 
 .cart-item button {
-  background: #c62828;
+  background: #f43636;
   font-size: 12px;
 }
 
 .cart-total {
   margin-top: 20px;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #3919de;
   padding-top: 15px;
 }
 
@@ -141,11 +142,9 @@ button:hover {
   .main-container {
     flex-direction: column;
   }
-
   .cart-section {
     width: 100%;
   }
-
   .shoe-grid {
     grid-template-columns: 1fr;
   }

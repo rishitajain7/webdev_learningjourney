@@ -70,7 +70,7 @@ function App() {
 
         <section className="cart-section">
           <h2>Cart</h2>
-          {cart.length === 0 ? (
+          {cart.length === 0 ?(
             <p className="empty-cart">Your cart is empty.</p>
           ) : (
             <div className="cart-items">

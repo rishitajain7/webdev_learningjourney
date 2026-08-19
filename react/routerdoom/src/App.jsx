@@ -1,105 +1,93 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
+// Home page
 function Home() {
   return (
     <div className="page">
-      <h1>Welcome to Our Website</h1>
-      <p>Explore our website and discover amazing content.</p>
-
-      <div className="buttons">
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Sign Up</Link>
-      </div>
+      <h1>Home Page</h1>
+      <p>Welcome to my React Router project.</p>
+      <p>This is the home page of the application.</p>
     </div>
   );
 }
 
+// Dashboard page
 function Dashboard() {
   return (
     <div className="page">
       <h1>Dashboard</h1>
-      <p>Welcome to your dashboard!</p>
-
-      <div className="cards">
-        <div className="card">
-          <h2>Profile</h2>
-          <p>View your profile information.</p>
-        </div>
-
-        <div className="card">
-          <h2>Posts</h2>
-          <p>View and manage your posts.</p>
-        </div>
-
-        <div className="card">
-          <h2>Settings</h2>
-          <p>Manage your account settings.</p>
-        </div>
-      </div>
+      <p>This is the dashboard page.</p>
+      <p>Users can see their information here.</p>
     </div>
   );
 }
 
+// Login page
 function Login() {
   return (
-    <div className="form-page">
-      <div className="form-box">
-        <h1>Login</h1>
+    <div className="page">
+      <h1>Login</h1>
 
-        <input type="email" placeholder="Enter Email" />
-        <input type="password" placeholder="Enter Password" />
+      <input type="email" placeholder="Enter your email" />
+      <input type="password" placeholder="Enter your password" />
 
-        <button>Login</button>
-
-        <p>
-          Don't have an account? <Link to="/signup">Sign Up</Link>
-        </p>
-      </div>
+      <button>Login</button>
     </div>
   );
 }
 
+// Signup page
 function Signup() {
   return (
-    <div className="form-page">
-      <div className="form-box">
-        <h1>Sign Up</h1>
+    <div className="page">
+      <h1>Sign Up</h1>
 
-        <input type="text" placeholder="Enter Name" />
-        <input type="email" placeholder="Enter Email" />
-        <input type="password" placeholder="Enter Password" />
+      <input type="text" placeholder="Enter your name" />
+      <input type="email" placeholder="Enter your email" />
+      <input type="password" placeholder="Create a password" />
 
-        <button>Sign Up</button>
-
-        <p>
-          Already have an account? <Link to="/login">Login</Link>
-        </p>
-      </div>
+      <button>Sign Up</button>
     </div>
   );
 }
 
 function App() {
   return (
+    // BrowserRouter keeps track of the URL in the browser.
     <BrowserRouter>
-      <nav>
-        <h2>My Website</h2>
+      <div className="app">
 
-        <div>
-          <Link to="/">Home</Link>
-          <Link to="/dashboard">Dashboard</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Signup</Link>
-        </div>
-      </nav>
+        <nav className="navbar">
+          <h2>My React App</h2>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
+          <div className="links">
+            {/* Link changes the URL without refreshing the whole page */}
+            <Link to="/">Home</Link>
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link>
+          </div>
+        </nav>
+
+        {/* Routes decides which component should be shown */}
+        <Routes>
+
+          {/* When URL is /, Home component will be displayed */}
+          <Route path="/" element={<Home />} />
+
+          {/* Dashboard route */}
+          <Route path="/dashboard" element={<Dashboard />} />
+
+          {/* Login route */}
+          <Route path="/login" element={<Login />} />
+
+          {/* Signup route */}
+          <Route path="/signup" element={<Signup />} />
+
+        </Routes>
+
+      </div>
     </BrowserRouter>
   );
 }

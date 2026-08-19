@@ -1,72 +1,80 @@
-# React Router Navigation
+# React Router Task
 
-This project is a simple React application created to understand how **routing and navigation work in React** using `react-router-dom`.
+This is a small React project I made to understand how routing works in React.
 
-The application has four different pages, and users can move between them without refreshing the entire website.
+I used React Router DOM to create different pages and move between them without refreshing the complete website.
 
-## Pages
+## Pages in this project
 
-The project includes these four routes:
+The application has four main routes:
 
-* **Home** – The main welcome page.
-* **Dashboard** – Shows some basic dashboard cards.
-* **Login** – A simple login form.
-* **Signup** – A simple registration form.
+* Home - `/`
+* Dashboard - `/dashboard`
+* Login - `/login`
+* Sign Up - `/signup`
 
-## Technologies Used
+## What I learned
 
-* React.js
-* Vite
-* JavaScript
-* CSS
-* React Router DOM
+While making this task, I understood the basic use of:
 
-## Project Structure
+* `BrowserRouter`
+* `Routes`
+* `Route`
+* `Link`
 
-```text
-src/
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
+`BrowserRouter` is used around the application so React can keep track of the URL.
+
+`Routes` contains all the routes of the application.
+
+`Route` connects a URL path with the component that should be displayed.
+
+For example:
+
+```jsx
+<Route path="/login" element={<Login />} />
 ```
 
-## How Routing Works
+This means that when the URL becomes `/login`, the Login component is shown.
 
-`BrowserRouter` is used to enable routing in the application.
+I used `Link` for navigation instead of normal HTML links because `Link` changes the route without reloading the complete page.
 
-`Routes` contains all the routes, while `Route` decides which component should be displayed for a particular URL.
+## How to run the project
 
-For navigation, the project uses `Link` from `react-router-dom`.
-Clicking this link opens the Dashboard page without reloading the website.
-
-## Installation
-
-First, install the required packages:
+First install the required packages:
 
 ```bash
 npm install
-npm install react-router-dom
 ```
 
-## Run the Project
-
-Start the development server using:
+Then start the development server:
 
 ```bash
 npm run dev
 ```
-Then open the localhost URL shown in the terminal in your browser.
 
-## Features
+After that, open the local URL shown in the terminal.
 
-* Simple navigation bar
-* Four different React routes
-* Login and Signup forms
-* Dashboard with cards
-* Responsive design
-* Clean and simple CSS styling
-* Navigation without full-page reloads
+## Project structure
 
-## Author 
-Rishita Jain
+```text
+src/
+│
+├── App.jsx
+├── App.css
+└── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+## My understanding
+
+The main thing I understood from this task is that React Router connects the browser URL with the React component that needs to be displayed.
+
+For example:
+
+`/dashboard` → Dashboard component
+
+`/login` → Login component
+
+So instead of creating completely separate HTML pages, React can display different components depending on the current route.

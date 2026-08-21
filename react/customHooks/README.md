@@ -1,119 +1,174 @@
-# ⚛️ React Custom Hook – useFetch
+# React Custom Hook - useFetch
 
-A React application demonstrating how to create and use a **custom `useFetch` Hook** for fetching data from an API.
+## About
 
-## 📌 Problem Statement
+This is a small React project made to understand **Custom Hooks**.
 
-Create a custom Hook in React that simplifies the process of fetching data from an API.
+In this project, I created a custom Hook called `useFetch` which fetches data from an API. I also added loading and error handling.
 
-## ✨ Features
+The data is displayed in the form of cards on the page.
 
-* Custom `useFetch` Hook
-* Accepts a URL as a parameter
-* Fetches data using the JavaScript `fetch()` method
-* Handles loading state
-* Handles API errors
-* Displays fetched photo data
-* Reusable custom Hook
-* Responsive photo grid
+## Problem Statement
 
-## 🛠️ Technologies Used
+The task was to create a custom Hook in React which can fetch data from an API.
 
-* React.js
+The Hook should:
+
+* Take a URL as input
+* Fetch data from the API
+* Show loading while data is being fetched
+* Show an error if something goes wrong
+* Return data, loading and error
+
+## What I Used
+
+* React
 * Vite
 * JavaScript
-* HTML
 * CSS
-* React Hooks
-* Custom Hook
+* `useState`
+* `useEffect`
+* `fetch()`
 
-## 📂 Project Structure
+## Custom Hook
+
+I created a file called:
+
+```text
+src/hooks/useFetch.js
+```
+
+The Hook takes a URL:
+
+```javascript
+useFetch(url)
+```
+
+and returns:
+
+```text
+data
+loading
+error
+```
+
+I used `useState` for storing these values and `useEffect` for running the API request.
+
+## API Used
+
+I used the JSONPlaceholder API for getting sample data.
+
+```text
+https://jsonplaceholder.typicode.com/photos?_limit=8
+```
+
+I did not use the actual photos in the final design. Instead, I used different solid colors for the boxes and displayed the data from the API.
+
+## Project Structure
 
 ```text
 custom-hooks/
-├── public/
+│
 ├── src/
 │   ├── hooks/
 │   │   └── useFetch.js
+│   │
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
 │   └── main.jsx
+│
 ├── package.json
-├── vite.config.js
 └── README.md
 ```
 
-## 🧩 Custom Hook
+## How to Run
 
-The project contains a custom Hook named `useFetch`.
+### 1. Open the project folder
 
-```javascript
-function useFetch(url) {
-  // Fetch data from the provided URL
-}
+Open the project folder in VS Code and open the terminal.
+
+If the terminal is in the main `react` folder, first go inside the project folder:
+
+```bash
+cd custom-hooks
 ```
 
-The Hook accepts a URL and returns three values:
+### 2. Install packages
 
-```javascript
-{
-  data,
-  loading,
-  error
-}
-```
-
-### `data`
-
-Contains the data received from the API.
-
-### `loading`
-
-A Boolean value that indicates whether the API request is still in progress.
-
-### `error`
-
-Contains an error message if the API request fails.
-
-## 🌐 API Used
-
-This project uses the JSONPlaceholder Photos API:
-
-```text
-https://jsonplaceholder.typicode.com/photos
-```
-
-A limited number of photos are fetched and displayed in the application.
-
-## 🚀 How to Run
-
-### 1. Install Dependencies
+Run this the first time:
 
 ```bash
 npm install
 ```
 
-### 2. Start the Development Server
+### 3. Start the project
+
+Run:
 
 ```bash
 npm run dev
 ```
 
-For network access:
+Vite will show a local URL like:
+
+```text
+http://localhost:5173/
+```
+
+Open this URL in Google Chrome.
+
+### 4. Run on Network
+
+If I want to access the project using the Network URL, I can run:
 
 ```bash
 npm run dev -- --host
 ```
 
-### 3. Open in Browser
+Vite will then show something like:
 
-Open the URL provided by Vite in Google Chrome.
+```text
+Local:   http://localhost:5173/
+Network: http://192.168.x.x:5173/
+```
 
-## 👩‍💻 Conclusion
+The Network URL shown by Vite can be opened in Chrome.
 
-The project demonstrates how a custom `useFetch` Hook can simplify API calls in React by keeping fetching logic separate from the UI component. The Hook can be reused with different API URLs in other React components.
+### 5. Next Time
 
+After the packages have already been installed, I don't need to run `npm install` again.
 
-## Author 
+I can simply use:
+
+```bash
+npm run dev
+```
+
+or for Network:
+
+```bash
+npm run dev -- --host
+```
+
+## What I Learned
+
+While making this project, I learned how custom Hooks work in React.
+
+I understood that we can put some common logic inside a separate Hook instead of writing everything inside `App.jsx`.
+
+I also learned about:
+
+* `useState`
+* `useEffect`
+* Fetching data from an API
+* Loading and error states
+* Creating and using a custom Hook
+* Displaying API data using `.map()`
+
+## Conclusion
+
+This project helped me understand the basic use of custom Hooks in React. The `useFetch` Hook keeps the fetching part separate from the main application, so the same logic can be used again when needed.
+
+## Author
 Rishita Jain

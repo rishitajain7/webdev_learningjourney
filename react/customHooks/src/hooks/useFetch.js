@@ -1,49 +1,30 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function useFetch(url) {
-  // This will store the data we get from the API
-  const [data, setData] = useState(null);
-
-  // Initially the data is loading
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  // This will store an error if the API request fails
-  const [error, setError] = useState(null);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    // Function to get data from the API
-    const getData = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        const response = await fetch(url);
-
-        // Check if the request was successful
+    fetch(url)
+      .then((response) => {
         if (!response.ok) {
-          throw new Error("Something went wrong while fetching data");
+          throw new Error("Could not get the data");
         }
 
-        const result = await response.json();
-
+        return response.json();
+      })
+      .then((result) => {
         setData(result);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        // Loading is finished whether request succeeds or fails
         setLoading(false);
-      }
-    };
-
-    getData();
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
   }, [url]);
 
-  // Return these values so other components can use the hook
-  return {
-    data,
-    loading,
-    error,
-  };
+  return { data, loading, error };
 }
 
 export default useFetch;

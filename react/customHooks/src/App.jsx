@@ -2,39 +2,28 @@ import useFetch from "./hooks/useFetch";
 import "./App.css";
 
 function App() {
-  // Calling our custom hook with the API URL
-  const {
-    data: photos,
-    loading,
-    error,
-  } = useFetch("https://jsonplaceholder.typicode.com/photos?_limit=8");
+  const { data, loading, error } = useFetch(
+    "https://jsonplaceholder.typicode.com/photos?_limit=8"
+  );
 
-  // Show this while the API request is running
   if (loading) {
-    return (
-      <div className="message">
-        <h2>Loading photos...</h2>
-      </div>
-    );
+    return <h2 className="message">Loading...</h2>;
   }
 
-  // Show this if something goes wrong
   if (error) {
-    return (
-      <div className="message">
-        <h2>Error: {error}</h2>
-      </div>
-    );
+    return <h2 className="message">{error}</h2>;
   }
 
   return (
     <div className="app">
       <h1>Photos</h1>
 
-      <div className="photo-container">
-        {photos.map((photo) => (
-          <div className="photo-card" key={photo.id}>
-            <img src={photo.url} alt={photo.title} />
+      <div className="cards">
+        {data.map((photo, index) => (
+          <div className="card" key={photo.id}>
+            <div className={`box box${index + 1}`}>
+              {photo.id} × {photo.id}
+            </div>
 
             <p>{photo.title}</p>
           </div>
